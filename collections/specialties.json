@@ -1,0 +1,12 @@
+[
+  {
+    "name": "SCIENCES ET TECHNOLOGIES",
+    "acronyme": "ST",
+    "cycle": "Licence"
+  },
+  {
+    "name": "Intelligence Artificiel Applique",
+    "acronyme": "I2A",
+    "cycle": "Master"
+  }
+]
