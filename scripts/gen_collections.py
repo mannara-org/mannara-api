@@ -1,4 +1,4 @@
-from .hardcoded import SPECIALTIES, STUDENTS
+from .hardcoded import SPECIALTIES, STUDENTS, SEMESTERS
 
 import json
 import random
@@ -75,3 +75,6 @@ with open("collections/specialties.json", "w") as f:
 
 with open("collections/academicLevels.json", "w") as f:
     json.dump(academicLevels, f, indent=2)
+
+with open("collections/semesters.json", "w") as f:
+    json.dump(SEMESTERS, f, indent=2)
