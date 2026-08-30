@@ -1,194 +1,204 @@
 {
-  "ST": [
-    {
-      "number": 1,
-      "courses": [
-        {
-          "name": "Algorithmique - Informatique",
-          "coef": 2,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Bureautique",
-          "coef": 1,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Chimie I",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": true
-        },
-        {
-          "name": "Physique I",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": true
-        },
-        {
-          "name": "Mathematique I",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": true
-        },
-        {
-          "name": "Methodologie de la redaction I",
-          "coef": 1,
-          "hasTP": false,
-          "hasTD": false
-        },
-        {
-          "name": "Techniques de Communication et d'Expression I",
-          "coef": 1,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Metier en Science et Technologie I",
-          "coef": 1,
-          "hasTP": false,
-          "hasTD": false
-        }
-      ]
-    },
-    {
-      "number": 2,
-      "courses": [
-        {
-          "name": "Bureautique",
-          "coef": 2,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Chimie II",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": true
-        },
-        {
-          "name": "Physique II",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": true
-        },
-        {
-          "name": "Mathematique II",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": true
-        },
-        {
-          "name": "Methodologie de la redaction II",
-          "coef": 1,
-          "hasTP": false,
-          "hasTD": false
-        },
-        {
-          "name": "Techniques de Communication et d'Expression II",
-          "coef": 1,
-          "hasTP": false,
-          "hasTD": false
-        },
-        {
-          "name": "Metier en Science et Technologie II",
-          "coef": 1,
-          "hasTP": false,
-          "hasTD": false
-        }
-      ]
+  "meta": {
+    "name": "semesters",
+    "aggregated": true,
+    "aggregatedBy": {
+      "model": "Specialty",
+      "field": "acronyme"
     }
-  ],
-  "I2A": [
-    {
-      "number": 1,
-      "courses": [
-        {
-          "name": "Data Science in Python",
-          "coef": 2,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Traitement et Analyse D'image",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Machine Learning",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "R\u00e9saux avanc\u00e9es",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Base de Donn\u00e9e avanc\u00e9es",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": false
-        }
-      ]
-    },
-    {
-      "number": 2,
-      "courses": [
-        {
-          "name": "Deep Learning",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "M\u00e9thod de conception avanc\u00e9es",
-          "coef": 2,
-          "hasTP": false,
-          "hasTD": true
-        },
-        {
-          "name": "Optimization et m\u00e9taheuristiques",
-          "coef": 3,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Processus stochastiques",
-          "coef": 2,
-          "hasTP": false,
-          "hasTD": true
-        },
-        {
-          "name": "Algorithmique avanc\u00e9e et complexit\u00e9",
-          "coef": 2,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "Calcul haute performance",
-          "coef": 2,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "WEB avanc\u00e9 et micro-services",
-          "coef": 2,
-          "hasTP": true,
-          "hasTD": false
-        },
-        {
-          "name": "S\u00e9minaire et Workshops",
-          "coef": 1,
-          "hasTP": false,
-          "hasTD": false
-        }
-      ]
-    }
-  ]
+  },
+  "data": {
+    "ST": [
+      {
+        "number": 1,
+        "courses": [
+          {
+            "name": "Algorithmique - Informatique",
+            "coef": 2,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Bureautique",
+            "coef": 1,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Chimie I",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": true
+          },
+          {
+            "name": "Physique I",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": true
+          },
+          {
+            "name": "Mathematique I",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": true
+          },
+          {
+            "name": "Methodologie de la redaction I",
+            "coef": 1,
+            "hasTP": false,
+            "hasTD": false
+          },
+          {
+            "name": "Techniques de Communication et d'Expression I",
+            "coef": 1,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Metier en Science et Technologie I",
+            "coef": 1,
+            "hasTP": false,
+            "hasTD": false
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "courses": [
+          {
+            "name": "Bureautique",
+            "coef": 2,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Chimie II",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": true
+          },
+          {
+            "name": "Physique II",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": true
+          },
+          {
+            "name": "Mathematique II",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": true
+          },
+          {
+            "name": "Methodologie de la redaction II",
+            "coef": 1,
+            "hasTP": false,
+            "hasTD": false
+          },
+          {
+            "name": "Techniques de Communication et d'Expression II",
+            "coef": 1,
+            "hasTP": false,
+            "hasTD": false
+          },
+          {
+            "name": "Metier en Science et Technologie II",
+            "coef": 1,
+            "hasTP": false,
+            "hasTD": false
+          }
+        ]
+      }
+    ],
+    "I2A": [
+      {
+        "number": 1,
+        "courses": [
+          {
+            "name": "Data Science in Python",
+            "coef": 2,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Traitement et Analyse D'image",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Machine Learning",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "R\u00e9saux avanc\u00e9es",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Base de Donn\u00e9e avanc\u00e9es",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": false
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "courses": [
+          {
+            "name": "Deep Learning",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "M\u00e9thod de conception avanc\u00e9es",
+            "coef": 2,
+            "hasTP": false,
+            "hasTD": true
+          },
+          {
+            "name": "Optimization et m\u00e9taheuristiques",
+            "coef": 3,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Processus stochastiques",
+            "coef": 2,
+            "hasTP": false,
+            "hasTD": true
+          },
+          {
+            "name": "Algorithmique avanc\u00e9e et complexit\u00e9",
+            "coef": 2,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "Calcul haute performance",
+            "coef": 2,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "WEB avanc\u00e9 et micro-services",
+            "coef": 2,
+            "hasTP": true,
+            "hasTD": false
+          },
+          {
+            "name": "S\u00e9minaire et Workshops",
+            "coef": 1,
+            "hasTP": false,
+            "hasTD": false
+          }
+        ]
+      }
+    ]
+  }
 }

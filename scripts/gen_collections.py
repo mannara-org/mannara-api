@@ -21,15 +21,15 @@ def gen_phoneNumber():
 
 academicLevels = {}
 
-for accronyme in STUDENTS.keys():
+for acronyme in STUDENTS.keys():
 
-    academicLevels[accronyme] = []
+    academicLevels[acronyme] = []
 
-    for level, data in enumerate(STUDENTS[accronyme]["academicLevels"]):
+    for level, data in enumerate(STUDENTS[acronyme]["academicLevels"]):
         sections = []
-        academicLevels[accronyme].append(
+        academicLevels[acronyme].append(
             {
-                "number": level,
+                "level": level + 1,
                 "sections": sections,
             }
         )
@@ -38,7 +38,7 @@ for accronyme in STUDENTS.keys():
             groups = []
             sections.append(
                 {
-                    "number": section_nb,
+                    "identifier": str(section_nb),
                     "groups": groups,
                 }
             )
@@ -70,11 +70,40 @@ for accronyme in STUDENTS.keys():
 
 
 with open("collections/specialties.json", "w") as f:
-    json.dump(SPECIALTIES, f, indent=2)
+    json.dump(
+        {
+            "meta": {"name": "specialties", "aggregated": False, "aggregatedBy": None},
+            "data": SPECIALTIES,
+        },
+        f,
+        indent=2,
+    )
 
 
 with open("collections/academicLevels.json", "w") as f:
-    json.dump(academicLevels, f, indent=2)
+    json.dump(
+        {
+            "meta": {
+                "name": "academicLevels",
+                "aggregated": True,
+                "aggregatedBy": {"model": "Specialty", "field": "acronyme"},
+            },
+            "data": academicLevels,
+        },
+        f,
+        indent=2,
+    )
 
 with open("collections/semesters.json", "w") as f:
-    json.dump(SEMESTERS, f, indent=2)
+    json.dump(
+        {
+            "meta": {
+                "name": "semesters",
+                "aggregated": True,
+                "aggregatedBy": {"model": "Specialty", "field": "acronyme"},
+            },
+            "data": SEMESTERS,
+        },
+        f,
+        indent=2,
+    )

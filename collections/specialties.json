@@ -1,12 +1,19 @@
-[
-  {
-    "name": "SCIENCES ET TECHNOLOGIES",
-    "acronyme": "ST",
-    "cycle": "Licence"
+{
+  "meta": {
+    "name": "specialties",
+    "aggregated": false,
+    "aggregatedBy": null
   },
-  {
-    "name": "Intelligence Artificiel Applique",
-    "acronyme": "I2A",
-    "cycle": "Master"
-  }
-]
+  "data": [
+    {
+      "name": "SCIENCES ET TECHNOLOGIES",
+      "acronyme": "ST",
+      "cycle": "Licence"
+    },
+    {
+      "name": "Intelligence Artificiel Applique",
+      "acronyme": "I2A",
+      "cycle": "Master"
+    }
+  ]
+}
