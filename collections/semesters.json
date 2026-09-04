@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "semesters",
+    "collectionName": "semesters",
     "aggregated": true,
     "aggregatedBy": {
       "model": "Specialty",

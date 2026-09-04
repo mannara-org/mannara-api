@@ -72,7 +72,7 @@ for acronyme in STUDENTS.keys():
 with open("collections/specialties.json", "w") as f:
     json.dump(
         {
-            "meta": {"name": "specialties", "aggregated": False, "aggregatedBy": None},
+            "meta": {"collectionName": "specialties", "aggregated": False, "aggregatedBy": None},
             "data": SPECIALTIES,
         },
         f,
@@ -84,7 +84,7 @@ with open("collections/academicLevels.json", "w") as f:
     json.dump(
         {
             "meta": {
-                "name": "academicLevels",
+                "collectionName": "academicLevels",
                 "aggregated": True,
                 "aggregatedBy": {"model": "Specialty", "field": "acronyme"},
             },
@@ -98,7 +98,7 @@ with open("collections/semesters.json", "w") as f:
     json.dump(
         {
             "meta": {
-                "name": "semesters",
+                "collectionName": "semesters",
                 "aggregated": True,
                 "aggregatedBy": {"model": "Specialty", "field": "acronyme"},
             },

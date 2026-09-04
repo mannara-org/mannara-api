@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "specialties",
+    "collectionName": "specialties",
     "aggregated": false,
     "aggregatedBy": null
   },
