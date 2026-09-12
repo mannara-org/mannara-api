@@ -1,5 +1,7 @@
 
 import json
+from typing import Any
+from pydantic import BaseModel
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -16,12 +18,18 @@ app.add_middleware(
 )
 
 
-@app.get("/")
-def seed_collection():
-    return {"Response": "Welcome!"}
+class Meta(BaseModel):
+    collectionName: str
+    aggregated: bool
+    aggregatedBy: dict[str, object] | None
+
+
+class SeedCollection(BaseModel):
+    meta: Meta
+    data: list[object] | dict[str, object]
 
 
 @app.get("/seed/collection/{collectionName}")
-def seed_collection(collectionName : str):
+def seed_collection(collectionName : str) -> SeedCollection :
     with open(f"collections/{collectionName}.json", "r") as f:
-        return json.loads(f.read())
+        return SeedCollection.model_validate_json(f.read())
