@@ -1,6 +1,4 @@
 
-import json
-from typing import Any
 from pydantic import BaseModel
 
 from fastapi import FastAPI
@@ -33,3 +31,9 @@ class SeedCollection(BaseModel):
 def seed_collection(collectionName : str) -> SeedCollection :
     with open(f"collections/{collectionName}.json", "r") as f:
         return SeedCollection.model_validate_json(f.read())
+
+
+@app.get("/search/university_programs")
+def search_uni_programs(_: str = "test"):
+    with open(f"collections/specialties.json", "r") as f:
+        return SeedCollection.model_validate_json(f.read()).data

@@ -80,6 +80,7 @@ with open("collections/specialties.json", "w") as f:
     )
 
 
+# TODO: rename this to students
 with open("collections/academicLevels.json", "w") as f:
     json.dump(
         {
@@ -94,6 +95,7 @@ with open("collections/academicLevels.json", "w") as f:
         indent=2,
     )
 
+# TODO: rename this to courses
 with open("collections/semesters.json", "w") as f:
     json.dump(
         {
