@@ -1,2 +1,4 @@
+
 def main() -> None:
-    print("Hello from mannara-api!")
+    import uvicorn
+    uvicorn.run("mannara_api.main:app", reload=True)
