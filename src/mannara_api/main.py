@@ -28,5 +28,5 @@ def seed_collection(collectionName : str) -> SeedCollection :
 
 
 @app.get("/search/university_programs")
-def search_uni_programs(_: str = "test"):
-    pass
+def search_uni_programs(q: str):
+    return { "Query": q }

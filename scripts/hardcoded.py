@@ -11,7 +11,7 @@ SPECIALTIES = [
     },
 ]
 
-STUDENTS = {
+STUDENTS_DISTRIBUTION = {
     "ST": {
         "academicLevels": [
             {
