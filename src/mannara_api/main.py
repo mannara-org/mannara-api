@@ -27,6 +27,6 @@ def seed_collection(collectionName: str) -> SeedCollection:
             raise HTTPException(status_code=500)
 
 
-@app.get("/search/university_programs")
-def search_uni_programs(q: str):
-    return { "Query": q }
+@app.get("/test/hello_world")
+def test__hello_world():
+    return { "message": "Hello, world!" }
