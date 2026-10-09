@@ -9,6 +9,9 @@
 - OUTPUT-TYPE: `JSON` <br>
 - AUTHOR: `Azsu-rae` <br>
 
+**TASK-DESCRIPTION**
+
+Implementing an endpoint to return a `Hello world!` message.
 
 **OUTPUT-STRUCTURE**
 ```json
