@@ -1,5 +1,5 @@
 
-- STATUS: `DONE | AWAITING (solver) | WIP` <br> <!-- WIP Work-in-Progress -->
+- STATUS: `` <br>
 - BY: `Azsu-rae` <br>
 - DOC: `./bruno-mannara-api/test-hello_world.yml` <br>
 
