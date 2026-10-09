@@ -1,21 +1,24 @@
 
-- STATUS: `` <br>
-- BY: `Azsu-rae` <br>
-- DOC: `./bruno-mannara-api/test-hello_world.yml` <br>
+- STATUS: `WIP` <br>
+- BY: `_` <br>
+- DOC: `_` <br>
 
 # 'Hello world' Endpoint
 
-- ENDPOINT: `/test/hello_world` <br>
+- ENDPOINT: `/seed/collection/*` <br>
 - OUTPUT-TYPE: `JSON` <br>
 - AUTHOR: `Azsu-rae` <br>
 
 **TASK-DESCRIPTION**
 
-Implementing an endpoint to return a `Hello world!` message.
+Better seeding data generation.
 
 **OUTPUT-STRUCTURE**
+
+JSONs for each seed collection in `./collections/`, each with its own endpoint in `/seed/collection/*`
+
 ```json
 {
-    "message": "Hello, world!"
+    // the validated model structure
 }
 ```
