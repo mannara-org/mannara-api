@@ -1,12 +1,12 @@
 
-STATUS: `DONE`
-DOC: `./bruno-mannara-api/test-hello_world.yml`
+STATUS: `DONE` <br>
+DOC: `./bruno-mannara-api/test-hello_world.yml` <br>
 
 # 'Hello world' Endpoint
 
-ENDPOINT: `/test/hello_world`
-OUTPUT-TYPE: `JSON`
-AUTHOR: Azsu-rae
+ENDPOINT: `/test/hello_world` <br>
+OUTPUT-TYPE: `JSON` <br>
+AUTHOR: Azsu-rae <br>
 
 
 **OUTPUT-STRUCTURE**
