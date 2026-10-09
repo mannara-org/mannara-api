@@ -1,6 +1,7 @@
 
 STATUS: `DONE` <br>
-DOC: `./bruno-mannara-api/test-hello_world.yml` <br>
+    BY: `Azsu-rae` <br>
+    DOC: `./bruno-mannara-api/test-hello_world.yml` <br>
 
 # 'Hello world' Endpoint
 
