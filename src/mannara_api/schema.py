@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 
-from mannara_api.models import Model
+# from mannara_api.models import Model
 
 class Aggregator(BaseModel):
     model: str
@@ -17,4 +17,4 @@ class Meta(BaseModel):
 
 class SeedCollection(BaseModel):
     meta: Meta
-    data: list[Model] | dict[str, list[Model]]
+    # data: list[Model] | dict[str, list[Model]]

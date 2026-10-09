@@ -18,7 +18,7 @@ app.add_middleware(
 
 
 @app.get("/seed/collection/{collectionName}")
-def seed_collection(collectionName : str) -> SeedCollection :
+def seed_collection(collectionName: str) -> SeedCollection:
     with open(f"collections/{collectionName}.json", "r") as f:
         try:
             return SeedCollection.model_validate_json(f.read())

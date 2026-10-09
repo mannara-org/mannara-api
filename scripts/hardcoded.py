@@ -1,4 +1,4 @@
-SPECIALTIES = [
+DEGREE_PROGRAMS = [
     {
         "name": "SCIENCES ET TECHNOLOGIES",
         "acronyme": "ST",
