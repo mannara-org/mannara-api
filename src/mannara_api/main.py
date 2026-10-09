@@ -30,3 +30,7 @@ def seed_collection(collectionName: str) -> SeedCollection:
 @app.get("/test/hello_world")
 def test__hello_world():
     return { "message": "Hello, world!" }
+
+@app.get("/search/programs")
+def search_programs(q: str):
+    return q
